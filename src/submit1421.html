@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="submit1421.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- 14 tabs -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#peter"
+            role="tab" data-toggle="tab">Peter Pan, CEO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#danny" role="tab"
+            data-toggle="tab">Danny Witherspoon, CFO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#agumbe"role="tab"
+            data-toggle="tab">Agumbe Tang, CTO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#alberto" role="tab"
+            data-toggle="tab">Alberto Somayya, Exec. Chef</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#alberto" role="tab"
+              data-toggle="tab">Login</a>
+          </li>
+    </ul>
+    <div class="tab-content">
+        nguyen tuan kiet
+    </div>
+    <div role="tabpanel" class="tab-pane fade show active" id="peter">
+        <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
+        <p> kiet dep trai </p>
+    </div>
+
+      <!-- 15 Accordion -->
+      <div class="card">
+        <div class="card-header" role="tab" id="peterhead">
+        <h3 class="mb-0">
+            <a data-toggle="collapse" data-target="#peter">
+            Peter Pan <small>Chief Epicurious Officer</small>
+            </a>
+        </h3>
+        </div>
+        <div class="collapse show" id="peter" data-parent="#accordion">
+            <div class="card-body">
+                <p class="d-none d-sm-block">. . .</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" role="tab" id="dannyhead">
+        <h3 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-target="#danny">
+            Dhanasekaran Witherspoon <small>Chief Food Officer</small>
+            </a>
+        </h3>
+    </div>
+    <div class="collapse" id="danny" data-parent="#accordion">
+        <div class="card-body">
+            <p class="d-none d-sm-block">. . .</em></p>
+        </div>
+    </div>
+</div>
+<div class="card">
+        <div class="card-header" role="tab" id="agumbehead">
+        <h3 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
+            Agumbe Tang <small>Chief Taste Officer</small>
+            </a>
+        </h3>
+    </div>
+    <div class="collapse" id="agumbe" data-parent="#accordion">
+        <div class="card-body">
+            <p class="d-none d-sm-block">. . .</p>
+        </div>
+    </div>
+</div>
+<div class="card">
+        <div class="card-header" role="tab" id="albertohead">
+        <h3 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-target="#alberto">
+            Alberto Somayya <small>Executive Chef</small>
+            </a>
+        </h3>
+    </div>
+    <div class="collapse" id="alberto" data-parent="#accordion">
+        <div class="card-body">
+            <p class="d-none d-sm-block">. . .</em></p>
+        </div>
+    </div>
+</div>
+
+<!-- 16 Tooltips and Modals -->
+            <a role="button" class="btn btn-block nav-link btn-warning"
+                        data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                        data-placement="bottom" href="#reserveform">Reserve Table</a>
+                        bottom of the page as follows:
+                        <script>
+                                $(document).ready(function(){
+                                    $('[data-toggle="tooltip"]').tooltip();
+                                });
+                        </script>
+                <div id="loginModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Login </h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-4">
+                                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                                        </div>
+                                        <div class="col-sm-auto">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label"> Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <span class="navbar-text">
+                <a data-toggle="modal" data-target="#loginModal">
+                <span class="fa fa-sign-in"></span> Login</a>
+            </span>
+
+            <!-- 17 Carousel -->
+            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            </div>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid"
+                        src="img/uthappizza.png" alt="Uthappizza">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Uthappizza 
+<span class="badge badge-danger">HOT</span>
+<span class="badge badge-pill badge-default">$4.99</span>
+</h2>
+                        . . .
+                    </div>
+                </div>
+                <div class="carousel-item">
+                        . . .
+                </div>
+                <div class="carousel-item">
+                        . . .
+                </div>
+</div>
+
+<!-- Bootstrap and JQuery -->
+<div class="btn-group" id="carouselButton">
+    <button class="btn btn-danger btn-sm" id="carousel-pause">
+        <span class="fa fa-pause"></span>
+    </button>
+    <button class="btn btn-danger btn-sm" id="carousel-play">
+        <span class="fa fa-play"></span>
+    </button>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#mycarousel").carousel( { interval: 2000 } );
+        $("#carousel-pause").click(function(){
+            $("#mycarousel").carousel('pause');
+        });
+        $("#carousel-play").click(function(){
+            $("#mycarousel").carousel('cycle');
+        });
+    });
+</script>
+<button class="btn btn-danger btn-sm" id="carouselButton">
+    <span id="carousel-button-icon" class="fa fa-pause"></span>
+</button>
+
+<!-- 19 Less -->
+
+
+
+            
+
+            
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
